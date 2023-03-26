@@ -45,5 +45,67 @@ body {
 .todo_container .add_tast .plus:hover {
   transform: rotate(90deg);
 }
+.todo_container .tasks_content {
+  padding: 15px;
+}
+.todo_container .tasks_content > span {
+  display: block;
+  background-color: #fff;
+  padding: 10px;
+}
+.todo_container .tasks_content > span:not(:last-child) {
+  margin-bottom: 10px;
+}
+.todo_container .tasks_content .no_tasks_message {
+  color: #777;
+  font-size: 15px;
+}
+.todo_container .tasks_content .task_box .delete {
+  float: right;
+  background-color: #e91e63;
+  padding: 4px 10px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.todo_container .tasks_content .task_box.finished {
+  text-decoration: line-through;
+}
+
+.task_stats {
+  overflow: hidden;
+  margin: 10px auto;
+  width: 600px;
+  font-size: 12px;
+}
+.task_stats .tasks_count {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+.task_stats .tasks_count span {
+  background-color: #e91e63;
+  color: #fff;
+  padding: 1px 5px;
+  font-size: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.task_stats .tasks_completed {
+  width: 50%;
+  float: right;
+  padding: 10px;
+  text-align: right;
+}
+.task_stats .tasks_completed span {
+  background-color: #03e9f4;
+  color: #fff;
+  padding: 1px 5px;
+  font-size: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=main.css.map */
