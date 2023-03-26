@@ -54,7 +54,7 @@ body {
     }
 
     // 002
-    .tasks_content {
+    .content_box {
         padding: 15px;
 
         &>span {
@@ -74,10 +74,10 @@ body {
         }
 
         // 003
-        .task_box {
+        .span_box {
 
             // 004
-            .delete_class {
+            .span_delete {
                 float: right;
                 background-color: #e91e63;
                 padding: 4px 10px;

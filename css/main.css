@@ -45,22 +45,22 @@ body {
 .todo_container .add_task .plus_button:hover {
   transform: rotate(90deg);
 }
-.todo_container .tasks_content {
+.todo_container .content_box {
   padding: 15px;
 }
-.todo_container .tasks_content > span {
+.todo_container .content_box > span {
   display: block;
   background-color: #fff;
   padding: 10px;
 }
-.todo_container .tasks_content > span:not(:last-child) {
+.todo_container .content_box > span:not(:last-child) {
   margin-bottom: 10px;
 }
-.todo_container .tasks_content .no_message {
+.todo_container .content_box .no_message {
   color: #777;
   font-size: 15px;
 }
-.todo_container .tasks_content .task_box .delete_class {
+.todo_container .content_box .span_box .span_delete {
   float: right;
   background-color: #e91e63;
   padding: 4px 10px;
@@ -70,7 +70,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
-.todo_container .tasks_content .task_box.finished {
+.todo_container .content_box .span_box.finished {
   text-decoration: line-through;
 }
 

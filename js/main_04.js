@@ -1,4 +1,4 @@
-console.log("lesson 03");
+console.log("lesson 04");
 // =======================
 
 
@@ -40,3 +40,14 @@ plus_button.onclick = function () {
 
     }
 }
+
+// =============================================
+document.addEventListener("click", function (e) {
+    if (e.target.className == "span_delete") {
+        e.target.parentNode.remove()
+    }
+
+    if (e.target.classList.contains("span_box")) {
+        e.target.classList.toggle("finished")
+    }
+})
