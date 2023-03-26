@@ -12,7 +12,7 @@ body {
     background-color: #f6f6f6;
 
     // 002
-    .add_tast {
+    .add_task {
         padding: 15px;
         background-color: #009688;
         position: relative;
@@ -33,7 +33,7 @@ body {
         }
 
         // 003
-        .plus {
+        .plus_button {
             position: absolute;
             height: 43px;
             width: 43px;
@@ -68,7 +68,7 @@ body {
         }
 
         // 003
-        .no_tasks_message {
+        .no_message {
             color: #777;
             font-size: 15px;
         }
@@ -77,7 +77,7 @@ body {
         .task_box {
 
             // 004
-            .delete {
+            .delete_class {
                 float: right;
                 background-color: #e91e63;
                 padding: 4px 10px;
@@ -96,14 +96,14 @@ body {
     }
 }
 
-.task_stats {
+.stats {
     overflow: hidden;
     margin: 10px auto;
     width: 600px;
     font-size: 12px;
 
     // 002
-    .tasks_count {
+    .count {
         width: 50%;
         float: left;
         padding: 10px;
@@ -120,7 +120,7 @@ body {
     }
 
     // 002
-    .tasks_completed {
+    .completed {
         width: 50%;
         float: right;
         padding: 10px;

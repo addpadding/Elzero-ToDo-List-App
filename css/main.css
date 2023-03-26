@@ -11,12 +11,12 @@ body {
   margin: 30px auto 0;
   background-color: #f6f6f6;
 }
-.todo_container .add_tast {
+.todo_container .add_task {
   padding: 15px;
   background-color: #009688;
   position: relative;
 }
-.todo_container .add_tast input {
+.todo_container .add_task input {
   display: inline-block;
   padding: 10px 15px;
   border: none;
@@ -25,10 +25,10 @@ body {
   color: #fff;
   font-size: 20px;
 }
-.todo_container .add_tast input:focus {
+.todo_container .add_task input:focus {
   outline: none;
 }
-.todo_container .add_tast .plus {
+.todo_container .add_task .plus_button {
   position: absolute;
   height: 43px;
   width: 43px;
@@ -42,7 +42,7 @@ body {
   font-size: 38px;
   transition: transform 0.3s;
 }
-.todo_container .add_tast .plus:hover {
+.todo_container .add_task .plus_button:hover {
   transform: rotate(90deg);
 }
 .todo_container .tasks_content {
@@ -56,11 +56,11 @@ body {
 .todo_container .tasks_content > span:not(:last-child) {
   margin-bottom: 10px;
 }
-.todo_container .tasks_content .no_tasks_message {
+.todo_container .tasks_content .no_message {
   color: #777;
   font-size: 15px;
 }
-.todo_container .tasks_content .task_box .delete {
+.todo_container .tasks_content .task_box .delete_class {
   float: right;
   background-color: #e91e63;
   padding: 4px 10px;
@@ -74,18 +74,18 @@ body {
   text-decoration: line-through;
 }
 
-.task_stats {
+.stats {
   overflow: hidden;
   margin: 10px auto;
   width: 600px;
   font-size: 12px;
 }
-.task_stats .tasks_count {
+.stats .count {
   width: 50%;
   float: left;
   padding: 10px;
 }
-.task_stats .tasks_count span {
+.stats .count span {
   background-color: #e91e63;
   color: #fff;
   padding: 1px 5px;
@@ -93,13 +93,13 @@ body {
   border-radius: 4px;
   font-weight: bold;
 }
-.task_stats .tasks_completed {
+.stats .completed {
   width: 50%;
   float: right;
   padding: 10px;
   text-align: right;
 }
-.task_stats .tasks_completed span {
+.stats .completed span {
   background-color: #03e9f4;
   color: #fff;
   padding: 1px 5px;
