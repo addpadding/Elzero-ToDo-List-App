@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.todo_container {
+  width: 600px;
+  margin: 30px auto 0;
+  background-color: #f6f6f6;
+}
+.todo_container .add_tast {
+  padding: 15px;
+  background-color: #009688;
+  position: relative;
+}
+.todo_container .add_tast input {
+  display: inline-block;
+  padding: 10px 15px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: calc(100% - 15px);
+  color: #fff;
+  font-size: 20px;
+}
+.todo_container .add_tast input:focus {
+  outline: none;
+}
+.todo_container .add_tast .plus {
+  position: absolute;
+  height: 43px;
+  width: 43px;
+  line-height: 43px;
+  background-color: #fff;
+  right: 12px;
+  border-radius: 50%;
+  text-align: center;
+  color: #009688;
+  cursor: pointer;
+  font-size: 38px;
+  transition: transform 0.3s;
+}
+.todo_container .add_tast .plus:hover {
+  transform: rotate(90deg);
+}
+
+/*# sourceMappingURL=main.css.map */
