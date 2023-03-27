@@ -43,7 +43,7 @@ plus_button.onclick = function () {
         the_input.focus()
 
         // =============
-        calculateTasks()
+        calculate()
 
     }
 }
@@ -54,7 +54,7 @@ document.addEventListener("click", function (e) {
 
         // ======================================
         if (content_box.childElementCount == 0) {
-            createNoTasks()
+            no_message_function()
         }
     }
 
@@ -63,22 +63,23 @@ document.addEventListener("click", function (e) {
     }
 
     // =============
-    calculateTasks()
+    calculate()
 })
 
 // =============================================
-function createNoTasks() {
+function no_message_function() {
     var msg_span = document.createElement("span")
     var msg_text = document.createTextNode("No Task To Show")
 
     msg_span.appendChild(msg_text)
     msg_span.className = "no_message"
+
     content_box.appendChild(msg_span)
 }
 
 
 // =============================================
-function calculateTasks() {
+function calculate() {
     count.innerHTML = document.querySelectorAll(".content_box .span_box").length
     completed.innerHTML = document.querySelectorAll(".content_box .finished").length
 }
